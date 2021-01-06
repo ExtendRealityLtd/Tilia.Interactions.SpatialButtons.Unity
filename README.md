@@ -1,7 +1,7 @@
 [![Tilia logo][Tilia-Image]](#)
 
-> ### Tilia {scope} {feature} {platform?}
-> {Description of feature}.
+> ### Interactions -> Spatial Buttons for the Unity Software
+> User interface button types that can be used within a spatial environment for the Unity software.
 
 [![Release][Version-Release]][Releases]
 [![License][License-Badge]][License]
@@ -9,9 +9,16 @@
 
 ## Introduction
 
-{Introduction into the purpose of the feature.}
+The Spatial Button prefabs provide the ability to add spatial user interface button elements to a scene that can be interacted with via an [Object Pointer].
 
-> **Requires** {platform and minimum version number}.
+The included Spatial Button prefabs are:
+
+* `Interactions.SpatialButton.ClickButton` - A simple button that is clicked and automatically unclicks.
+* `Interactions.SpatialButton.ToggleButton` - A button that is toggled on and off whenever it is clicked.
+* `Interactions.SpatialButton.OptionButton` - A button that is used as a group of other options buttons where only one can be selected.
+* `Interactions.SpatialButton.Group` - A container for Spatial Buttons to group them under a single, distinct dispatcher (required for `Interactions.SpatialButton.OptionButton`).
+
+> **Requires** the Unity software version `2018.3.10f1` (or above).
 
 ## Getting Started
 
@@ -35,9 +42,9 @@ Please refer to the Extend Reality [Code of Conduct].
 
 Code released under the [MIT License][License].
 
-[License-Badge]: https://img.shields.io/github/license/ExtendRealityLtd/Tilia.{scope}.{feature}.{platform?}.svg
-[Version-Release]: https://img.shields.io/github/release/ExtendRealityLtd/Tilia.{scope}.{feature}.{platform?}.svg
-[project coding conventions]: https://github.com/ExtendRealityLtd/.github/blob/master/CONVENTIONS/{project_type}
+[License-Badge]: https://img.shields.io/github/license/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity.svg
+[Version-Release]: https://img.shields.io/github/release/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity.svg
+[project coding conventions]: https://github.com/ExtendRealityLtd/.github/blob/master/CONVENTIONS/UNITY3D.md
 
 [Tilia-Image]: https://user-images.githubusercontent.com/1029673/67681496-5bf10700-f985-11e9-9413-e61801b6eab5.png
 [License]: LICENSE.md
@@ -49,3 +56,4 @@ Code released under the [MIT License][License].
 [Releases]: ../../releases
 [Contributing guidelines]: https://github.com/ExtendRealityLtd/.github/blob/master/CONTRIBUTING.md
 [Code of Conduct]: https://github.com/ExtendRealityLtd/.github/blob/master/CODE_OF_CONDUCT.md
+[Object Pointer]: https://github.com/ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity
