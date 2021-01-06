@@ -9,7 +9,14 @@
 
 ## Introduction
 
-Coming soon when prefabs are created...
+The Spatial Button prefabs provide the ability to add spatial user interface button elements to a scene that can be interacted with via an [Object Pointer].
+
+The included Spatial Button prefabs are:
+
+* `Interactions.SpatialButton.ClickButton` - A simple button that is clicked and automatically unclicks.
+* `Interactions.SpatialButton.ToggleButton` - A button that is toggled on and off whenever it is clicked.
+* `Interactions.SpatialButton.OptionButton` - A button that is used as a group of other options buttons where only one can be selected.
+* `Interactions.SpatialButton.Group` - A container for Spatial Buttons to group them under a single, distinct dispatcher (required for `Interactions.SpatialButton.OptionButton`).
 
 > **Requires** the Unity software version `2018.3.10f1` (or above).
 
@@ -49,3 +56,4 @@ Code released under the [MIT License][License].
 [Releases]: ../../releases
 [Contributing guidelines]: https://github.com/ExtendRealityLtd/.github/blob/master/CONTRIBUTING.md
 [Code of Conduct]: https://github.com/ExtendRealityLtd/.github/blob/master/CODE_OF_CONDUCT.md
+[Object Pointer]: https://github.com/ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity
