@@ -1,0 +1,14 @@
+# Changelog
+
+## 1.0.0 (2021-01-06)
+
+#### Features
+
+* **SpatialButton:** add prefabs for spatial button types ([dd57e18](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/dd57e18037644c6a1dda18c67772978744c55ee1))
+  > The new Spatial Button prefabs have been added in the following types:
+  > 
+  > * ClickButton - a simple button that is clicked on and auto off * ToggleButton - a button that is toggled on and off per click * OptionButton - a button used as a group of buttons for options
+  > 
+  > The Group prefab also allows SpatialButtons to be grouped into a distinct group to be processed via a distinct dispatcher.
+* **structure:** add initial documentation content ([c98a364](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/c98a3641b10cd1ae65cd07fd2f1f95bf31fdc1e8))
+  > The content of documentation and other supplement files has been added to the repo.
