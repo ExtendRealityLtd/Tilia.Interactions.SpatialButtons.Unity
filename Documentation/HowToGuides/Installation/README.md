@@ -54,9 +54,19 @@ The Spatial Buttons provide the ability to create user interface buttons within 
   ```
 * Switch back to the Unity software and wait for it to finish importing the added package.
 
+### Step 4: Installing the TextMeshPro dependencies
+
+The `Tilia Interactions SpatialButtons Unity` package will now be available in your Unity project `Packages` directory but will need the [TextMeshPro] dependencies before the prefabs can be used.
+
+Expand the `Tilia Interactions SpatialButtons Unity` package directory in the Unity Project window and select the `Packages -> Tilia Interactions SpatialButtons Unity -> Runtime -> Prefabs` directory then drag and drop the `Interactions.SpatialButton.ClickButton` prefab into the Unity Hierarchy window.
+
+You will now see a `TMP Importer` window appear within the Unity software. Click on the `Import TMP Essentials` button within this window to install the relevant TextMeshPro dependencies.
+
+> You may see a couple of errors in your console window in relation to TextMeshPro, but these errors will go away when the TextMeshPro dependencies are installed.
+
 ### Done
 
-The `Tilia Interactions SpatialButtons Unity` package will now be available in your Unity project `Packages` directory ready for use in your project.
+The `Interactions.SpatialButton.ClickButton` prefab can now be deleted from the scene and the Spatial Button prefabs are now ready to be used.
 
 The package will now also show up in the Unity Package Manager UI. From then on the package can be updated by selecting the package in the Unity Package Manager and clicking on the `Update` button or using the version selection UI.
 
@@ -66,3 +76,4 @@ The package will now also show up in the Unity Package Manager UI. From then on 
 [Version-Release]: https://img.shields.io/github/release/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity.svg
 [Releases]: ../../../../../releases
 [Latest-Release]: ../../../../../releases/latest
+[TextMeshPro]: https://docs.unity3d.com/Manual/com.unity.textmeshpro.html
