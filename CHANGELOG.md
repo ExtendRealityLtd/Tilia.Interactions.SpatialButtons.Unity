@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.1...v1.0.2) (2021-01-07)
+
+#### Bug Fixes
+
+* **prefab:** update ActiveButtonIndex when group button changes ([3b327af](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/3b327af37473bd1911a990399b673dcf2513a68f))
+  > The ActiveButtonIndex property will now correctly reflect the actual selected button and not only used for the initial set.
+
 ### [1.0.1](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.0...v1.0.1) (2021-01-07)
 
 #### Miscellaneous Chores
