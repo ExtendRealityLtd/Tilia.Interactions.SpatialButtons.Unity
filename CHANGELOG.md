@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.4](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.3...v1.0.4) (2021-01-07)
+
+#### Bug Fixes
+
+* **HowToGuides:** add step to install TextMeshPro dependencies ([7f75062](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/7f750625dcc2f25d867bf6f947809cef5932578c))
+  > The installation guide now includes the steps required to install the TextMeshPro depdendencies via the TMP Importer popup window.
+
 ### [1.0.3](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.2...v1.0.3) (2021-01-07)
 
 #### Bug Fixes
