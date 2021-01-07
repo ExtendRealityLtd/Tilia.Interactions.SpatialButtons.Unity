@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.3](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.2...v1.0.3) (2021-01-07)
+
+#### Bug Fixes
+
+* **API:** add missing API documentation ([64ab7a8](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/64ab7a8e8329a0ac46299b168b74bf1e53d9e4d4))
+  > The API docs have been auto generated for the latest changes.
+
 ### [1.0.2](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.1...v1.0.2) (2021-01-07)
 
 #### Bug Fixes
