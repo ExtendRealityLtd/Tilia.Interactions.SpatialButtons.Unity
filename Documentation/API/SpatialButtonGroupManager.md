@@ -9,6 +9,7 @@ Manages the Spatial Button group.
 * [Syntax]
 * [Fields]
   * [cachedIndex]
+  * [ignoreActiveButtonIndexChanges]
 * [Properties]
   * [ActiveButtonIndex]
   * [ButtonList]
@@ -20,6 +21,9 @@ Manages the Spatial Button group.
   * [OnBeforeActiveButtonIndexChange()]
   * [OnEnable()]
   * [PopulateValidButtonList()]
+  * [SetActiveButtonIndexWhenButtonActivated(SurfaceData)]
+  * [SubscribeButtonActivated(Object)]
+  * [UnsubscribeButtonActivated(Object)]
 
 ## Details
 
@@ -48,6 +52,16 @@ The cached value of the [ActiveButtonIndex] before it is changed.
 
 ```
 protected int cachedIndex
+```
+
+#### ignoreActiveButtonIndexChanges
+
+Whether to ignore processing changes when the [ActiveButtonIndex] value changes.
+
+##### Declaration
+
+```
+protected bool ignoreActiveButtonIndexChanges
 ```
 
 ### Properties
@@ -160,9 +174,59 @@ Populates the list of valid group buttons.
 public virtual void PopulateValidButtonList()
 ```
 
+#### SetActiveButtonIndexWhenButtonActivated(SurfaceData)
+
+Sets the [ActiveButtonIndex] when a button is activate.
+
+##### Declaration
+
+```
+protected virtual void SetActiveButtonIndexWhenButtonActivated(SurfaceData data)
+```
+
+##### Parameters
+
+| Type | Name | Description |
+| --- | --- | --- |
+| SurfaceData | data | The data to retrieve the button being activated. |
+
+#### SubscribeButtonActivated(Object)
+
+Subscribes to the SpatialTargetFacade.Activated event.
+
+##### Declaration
+
+```
+public virtual void SubscribeButtonActivated(Object obj)
+```
+
+##### Parameters
+
+| Type | Name | Description |
+| --- | --- | --- |
+| Object | obj | The object containing the SpatialTargetFacade. |
+
+#### UnsubscribeButtonActivated(Object)
+
+Unsubscribes to the SpatialTargetFacade.Activated event.
+
+##### Declaration
+
+```
+public virtual void UnsubscribeButtonActivated(Object obj)
+```
+
+##### Parameters
+
+| Type | Name | Description |
+| --- | --- | --- |
+| Object | obj | The object containing the SpatialTargetFacade. |
+
 [Tilia.Interactions.SpatialButtons]: README.md
 [ActiveButtonIndex]: SpatialButtonGroupManager.md#ActiveButtonIndex
+[ActiveButtonIndex]: SpatialButtonGroupManager.md#ActiveButtonIndex
 [SpatialButtonFacade]: SpatialButtonFacade.md
+[ActiveButtonIndex]: SpatialButtonGroupManager.md#ActiveButtonIndex
 [ActiveButtonIndex]: SpatialButtonGroupManager.md#ActiveButtonIndex
 [ActiveButtonIndex]: SpatialButtonGroupManager.md#ActiveButtonIndex
 [Inheritance]: #Inheritance
@@ -170,6 +234,7 @@ public virtual void PopulateValidButtonList()
 [Syntax]: #Syntax
 [Fields]: #Fields
 [cachedIndex]: #cachedIndex
+[ignoreActiveButtonIndexChanges]: #ignoreActiveButtonIndexChanges
 [Properties]: #Properties
 [ActiveButtonIndex]: #ActiveButtonIndex
 [ButtonList]: #ButtonList
@@ -181,3 +246,6 @@ public virtual void PopulateValidButtonList()
 [OnBeforeActiveButtonIndexChange()]: #OnBeforeActiveButtonIndexChange
 [OnEnable()]: #OnEnable
 [PopulateValidButtonList()]: #PopulateValidButtonList
+[SetActiveButtonIndexWhenButtonActivated(SurfaceData)]: #SetActiveButtonIndexWhenButtonActivatedSurfaceData
+[SubscribeButtonActivated(Object)]: #SubscribeButtonActivatedObject
+[UnsubscribeButtonActivated(Object)]: #UnsubscribeButtonActivatedObject
