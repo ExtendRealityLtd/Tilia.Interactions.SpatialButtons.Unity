@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.5](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.4...v1.0.5) (2021-01-09)
+
+#### Bug Fixes
+
+* **prefab:** ensure inner events are propagated to facade events ([8aeaa90](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/8aeaa90c83d0f60981d409f5eb7ca964f7573d9f))
+  > The Facade events were not doing anything because the inner events had not been linked to notify the Facade to raise the event.
+
 ### [1.0.4](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.3...v1.0.4) (2021-01-07)
 
 #### Bug Fixes
