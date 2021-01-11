@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.0](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.5...v1.1.0) (2021-01-11)
+
+#### Features
+
+* **HowToGuides:** add guide for option buttons ([2df0363](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/2df0363e9b08aae912f7f691deef11b0ec76df66))
+  > A new guide has been added showing how to create a group of option buttons.
+* **HowToGuides:** add guide for toggle button ([e24eb0d](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/e24eb0d3b874017112dc7fe540bfad7063323700))
+  > A new guide has been added showing how to add a toggle button and also how to use the Spatial Target Processor along with the Button Groups to make this guide a bit more worthwhile.
+* **HowToGuides:** add guide on how to add click button ([714c1cb](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/714c1cb931961b3f2f8c5a987df4419b057e4e95))
+  > A new guide has been added to show how to add a simple click button to a scene.
+
 ### [1.0.5](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.0.4...v1.0.5) (2021-01-09)
 
 #### Bug Fixes
