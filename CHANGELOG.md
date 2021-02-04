@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.1.1...v1.2.0) (2021-02-04)
+
+#### Features
+
+* **prefabs:** add ability to touch spatial buttons with objects ([8037bec](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/8037bec67b5be790fc26fe996a9f7aa54792f70d))
+  > The new CollidableObjects property allows any specified object to interact with the spatial button, so if Interactors are added to it then they will be able to touch the button and the hover state is controller by the larger trigger collider.
+
 ### [1.1.1](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.1.0...v1.1.1) (2021-01-31)
 
 #### Miscellaneous Chores
