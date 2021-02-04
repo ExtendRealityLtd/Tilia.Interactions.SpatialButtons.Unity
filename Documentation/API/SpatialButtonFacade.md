@@ -11,6 +11,7 @@ The public interface into the SpatialButton Prefab.
   * [Activated]
   * [Deactivated]
 * [Properties]
+  * [CollidableObjects]
   * [Configuration]
   * [DisabledHover]
   * [DisabledInactive]
@@ -67,6 +68,16 @@ public UnityEvent Deactivated
 ```
 
 ### Properties
+
+#### CollidableObjects
+
+A UnityEngine.Object collection of objects that can collide with the spatial button.
+
+##### Declaration
+
+```
+public UnityObjectObservableList CollidableObjects { get; set; }
+```
 
 #### Configuration
 
@@ -226,6 +237,7 @@ protected virtual void OnAfterIsEnabledChange()
 [Activated]: #Activated
 [Deactivated]: #Deactivated
 [Properties]: #Properties
+[CollidableObjects]: #CollidableObjects
 [Configuration]: #Configuration
 [DisabledHover]: #DisabledHover
 [DisabledInactive]: #DisabledInactive

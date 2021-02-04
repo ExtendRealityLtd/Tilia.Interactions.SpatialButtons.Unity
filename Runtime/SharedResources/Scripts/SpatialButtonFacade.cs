@@ -9,6 +9,7 @@
     using UnityEngine;
     using UnityEngine.Events;
     using Zinnia.Data.Attribute;
+    using Zinnia.Data.Collection.List;
     using Zinnia.Data.Type;
 
     /// <summary>
@@ -103,6 +104,15 @@
         [Serialized, Cleared]
         [field: DocumentedByXml]
         public ButtonStyle DisabledHover { get; set; }
+        #endregion
+
+        #region Collision Settings
+        /// <summary>
+        /// A <see cref="UnityEngine.Object"/> collection of objects that can collide with the spatial button.
+        /// </summary>
+        [Serialized]
+        [field: Header("Collision Settings"), DocumentedByXml]
+        public UnityObjectObservableList CollidableObjects { get; set; }
         #endregion
 
         #region Button Events
