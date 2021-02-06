@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.2.2](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.2.1...v1.2.2) (2021-02-06)
+
+#### Bug Fixes
+
+* **prefabs:** allow option group buttons to be touched on and off ([8a9d091](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/8a9d091736b21b9a8b28ac53000a09732bdfd6a0))
+  > There was an issue where Option buttons would not toggle each other on and off because the Select action was going through the SpatialTarget and an Option group needs the Spatial Dispatcher to dispatch the Select action so it knows which other buttons to dispatch the Deselect action to.
+  > 
+  > The SpatialButton.OptionButton prefab now uses the SpatialButtonConfigurator Select action as this goes through the correct dispatcher when dealing with button groups.
+
 ### [1.2.1](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.2.0...v1.2.1) (2021-02-04)
 
 #### Miscellaneous Chores
