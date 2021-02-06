@@ -26,7 +26,7 @@
         "url": "https://github.com/ExtendRealityLtd"
     },
     "dependencies": {
-        "io.extendreality.tilia.indicators.spatialtargets.unity": "1.5.3",
+        "io.extendreality.tilia.indicators.spatialtargets.unity": "1.5.4",
         "com.unity.textmeshpro": "1.3.0"
     },
     "files": [

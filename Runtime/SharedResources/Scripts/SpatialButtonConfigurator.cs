@@ -114,6 +114,7 @@
         {
             if (SpatialTargetDispatcher == null)
             {
+                SpatialTargetFacade.Configuration.TargetController.DoSelect(data);
                 return;
             }
 
@@ -123,12 +124,12 @@
         }
 
         /// <summary>
-        /// Selects the containing button with null data.
+        /// Selects the containing button.
         /// </summary>
-        public virtual void Select()
+        /// <param name="selectingObject">An optional <see cref="GameObject"/> that is selecting the button.</param>
+        public virtual void Select(GameObject selectingObject = null)
         {
-            SurfaceData data = new SurfaceData();
-            data.Transform = Facade.transform;
+            SurfaceData data = new SurfaceData(selectingObject != null ? selectingObject.transform : Facade.transform);
             Vector3 rayOrigin = new Vector3(Facade.transform.position.x, Facade.transform.position.y, Facade.transform.position.z - (Facade.transform.localScale.z * 0.501f));
             Physics.Raycast(rayOrigin, Facade.transform.forward, out RaycastHit hit);
             data.CollisionData = hit;
