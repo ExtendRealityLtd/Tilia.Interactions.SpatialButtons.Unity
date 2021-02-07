@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.3](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.2.2...v1.2.3) (2021-02-07)
+
+#### Bug Fixes
+
+* **prefabs:** force apply TextMeshPro styles when state is enabled ([bfb0f88](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/bfb0f8886862294c7455dbf9c419011a4dbe015c))
+  > There is an issue in later versions of Unity where if the TextMeshPro component is not enabled in the scene then it does not apply the state styles to the TextMeshPro component. This fix uses a BehaviourEnabledObserver to check to see whtn the TextMeshPro for each style is enabled and then force applies the styles.
+
 ### [1.2.2](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.2.1...v1.2.2) (2021-02-06)
 
 #### Bug Fixes
