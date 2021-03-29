@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.10](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.2.9...v1.2.10) (2021-03-29)
+
+#### Bug Fixes
+
+* **package.json:** bump textmeshpro to latest version ([42e944c](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/42e944c215272a414d1445b504de98a70c53e889))
+  > The version of Text Mesh Pro has been updated to a much newer version.
+
 ### [1.2.9](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.2.8...v1.2.9) (2021-03-29)
 
 #### Miscellaneous Chores
