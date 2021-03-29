@@ -27,7 +27,7 @@
     },
     "dependencies": {
         "io.extendreality.tilia.indicators.spatialtargets.unity": "1.5.10",
-        "com.unity.textmeshpro": "3.0.4"
+        "com.unity.textmeshpro": "100.0.14"
     },
     "files": [
         "*.md",
