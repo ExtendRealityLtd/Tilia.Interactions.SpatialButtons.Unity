@@ -22,9 +22,7 @@ We can achieve a simple group of Option Buttons using the `Interactions.SpatialB
 
 Our scene should already have everything set up to dispatch our Object Pointer events to our Spatial Target Processor, so all we need to do to add our Option Button Group is to add another Button Group and fill it with some Option Buttons.
 
-Expand the `Tilia Interactions SpatialButtons Unity` package directory in the Unity Project window and select the `Packages -> Tilia Interactions SpatialButtons Unity -> Runtime -> Prefabs` directory then drag and drop the `Interactions.SpatialButton.Group` prefab into the Unity Hierarchy window.
-
-![Adding ButtonGroup Prefab To Scene](assets/images/AddingButtonGroupPrefabToScene.png)
+Add a `Interactions.SpatialButton.Group` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Interactions -> SpatialButton -> Interactions.SpatialButton.Group` from the Unity main top menu.
 
 ### Step 2
 
@@ -56,9 +54,7 @@ Drag and drop the `OptionGroup1` GameObject into the newly created `Element 0` p
 
 We can now start adding some Option Buttons to our group.
 
-Expand the `Tilia Interactions SpatialButtons Unity` package directory in the Unity Project window and select the `Packages -> Tilia Interactions SpatialButtons Unity -> Runtime -> Prefabs` directory then drag and drop the `Interactions.SpatialButton.OptionButton` prefab into the Unity Hierarchy window as a child of the `OptionGroup1 -> Buttons` GameObject.
-
-![Adding OptionButton Prefab To Scene](assets/images/AddingOptionButtonPrefabToScene.png)
+Add a `Interactions.SpatialButton.OptionButton` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Interactions -> SpatialButtons -> Interactions.SpatialButton.OptionButton` from the Unity main top menu and drag it into being a child of the `OptionGroup1 -> Buttons` GameObject.
 
 ### Step 6
 

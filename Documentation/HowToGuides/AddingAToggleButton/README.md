@@ -20,9 +20,7 @@ The `Interactions.SpatialButton.ToggleButton` prefab makes it very easy to set u
 
 ### Step 1
 
-We already have pretty much everything we need in our scene from the [Adding A Click Button] guide, so all we really need to do is expand the `Tilia Interactions SpatialButtons Unity` package directory in the Unity Project window and select the `Packages -> Tilia Interactions SpatialButtons Unity -> Runtime -> Prefabs` directory then drag and drop the `Interactions.SpatialButton.ToggleButton` prefab into the Unity Hierarchy window.
-
-![Adding SpatialButton Prefab To Scene](assets/images/AddingSpatialButtonPrefabToScene.png)
+We already have pretty much everything we need in our scene from the [Adding A Click Button] guide, so all we really need to do is add a `Interactions.SpatialButton.ToggleButton` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Interactions -> SpatialButtons -> Interactions.SpatialButton.ToggleButton` from the Unity main top menu.
 
 ### Step 2
 
@@ -50,9 +48,7 @@ The `Interactions.SpatialButton.Group` prefab allows us to group together scene 
 
 We're not going to delve into the Spatial Target Dispatcher rules in this guide, instead we're just going to put our two scene Spatial Buttons into a Button Group and take a quick look at the Spatial Target Processor.
 
-Let's start by expanding the `Tilia Interactions SpatialButtons Unity` package directory in the Unity Project window and select the `Packages -> Tilia Interactions SpatialButtons Unity -> Runtime -> Prefabs` directory then drag and drop the `Interactions.SpatialButton.Group` prefab into the Unity Hierarchy window.
-
-![Adding ButtonGroup Prefab To Scene](assets/images/AddingButtonGroupPrefabToScene.png)
+Let's start by adding a `Interactions.SpatialButton.Group` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Interactions -> SpatialButtons -> Interactions.SpatialButton.Group` from the Unity main top menu.
 
 ### Step 5
 
@@ -72,9 +68,7 @@ This is where the Spatial Target Processor comes in as the Spatial Target Proces
 
 > You can also have multiple Spatial Target Processors in the scene and Spatial Target Processors can also be added to the Spatial Target Processor List as they extend the Spatial Target Dispatcher.
 
-Expand the `Tilia Indicators SpatialTargets Unity` package directory in the Unity Project window and select the `Packages -> Tilia Indicators SpatialTargets Unity -> Runtime -> Prefabs` directory then drag and drop the `Indicators.SpatialTargets.Processor` prefab into the Unity Hierarchy window.
-
-![Adding Processor Prefab To Scene](assets/images/AddingProcessorPrefabToScene.png)
+Add a `Indicators.SpatialTargets.Processor` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Indicators -> SpatialTargets -> Indicators.SpatialTargets.Processor` from the Unity main top menu.
 
 ### Step 7
 
