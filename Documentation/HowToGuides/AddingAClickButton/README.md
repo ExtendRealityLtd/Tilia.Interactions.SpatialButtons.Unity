@@ -43,9 +43,7 @@ We need to now set up some glue between our Object Pointer and our Spatial Butto
 
 We can use the `Indicators.SpatialTargets.Dispatcher` prefab, which acts as a separation layer for our Spatial Buttons. Our Object Pointer only needs to know about our Dispatcher and our Dispatcher knows about our Spatial Buttons. This means for any communication between our Object Pointer and our Spatial Buttons will go through a Dispatcher.
 
-Expand the `Tilia Indicators SpatialTargets Unity` package directory in the Unity Project window and select the `Packages -> Tilia Indicators SpatialTargets Unity -> Runtime -> Prefabs` directory then drag and drop the `Indicators.SpatialTargets.Dispatcher` prefab into the Unity Hierarchy window.
-
-![Adding Dispatcher Prefab To Scene](assets/images/AddingDispatcherPrefabToScene.png)
+Add a `Indicators.SpatialTargets.Dispatcher` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Indicators -> SpatialTargets -> Indicators.SpatialTargets.Dispatcher` from the Unity main top menu.
 
 ### Step 4
 
@@ -74,9 +72,7 @@ Do the same as [Step 4] but for the `Exited` and `Selected` event parameters on 
 
 We now have a Spatial Target Dispatcher in our scene all set up to accept events from our Object Pointer and dispatch the appropriate method to whatever Spatial Target is in the scene. We can now add a Spatial Button to our scene to create our simple click button.
 
-Expand the `Tilia Interactions SpatialButtons Unity` package directory in the Unity Project window and select the `Packages -> Tilia Interactions SpatialButtons Unity -> Runtime -> Prefabs` directory then drag and drop the `Interactions.SpatialButton.ClickButton` prefab into the Unity Hierarchy window.
-
-![Adding SpatialButton Prefab To Scene](assets/images/AddingSpatialButtonPrefabToScene.png)
+Add a `Interactions.SpatialButton.ClickButton` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Interactions -> SpatialButtons -> Interactions.SpatialButton.ClickButton` from the Unity main top menu.
 
 ### Step 7
 
