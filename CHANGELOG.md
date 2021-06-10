@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.3.8](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.3.7...v1.3.8) (2021-06-10)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.indicators.spatialtargets.unity ([77f6f12](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/77f6f122e1d6f4246e986885b2d8687ac12373dc))
+  > Bumps [io.extendreality.tilia.indicators.spatialtargets.unity](https://github.com/ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity) from 1.7.4 to 1.7.5. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity/compare/v1.7.4...v1.7.5)
+* **README.md:** update title logo to related-media repo ([f65edec](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/f65edec8cd06f2da5da7b1f837a6f5de6343a463))
+  > The title logo is now located on the related-media repo.
+
 ### [1.3.7](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.3.6...v1.3.7) (2021-05-09)
 
 #### Miscellaneous Chores
