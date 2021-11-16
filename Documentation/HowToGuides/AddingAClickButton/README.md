@@ -13,7 +13,7 @@ Creating 3D user interfaces in spatial computing can be achieved by using collid
 ## Prerequisites
 
 * [Add the Tilia.Indicators.ObjectPointers.Unity -> Indicators.ObjectPointers.Straight] prefab to the scene hierarchy.
-* [Install the Tilia.Indicators.SpatialTargets.Unity] package dependency in to your [Unity] project.
+* [Install the Tilia.Interactions.SpatialButtons.Unity] package dependency in to your [Unity] project.
 
 ## Let's Start
 
@@ -127,7 +127,7 @@ Play the Unity scene and press the `Space` key to activate the Object Pointer, p
 ![Click The Spatial Button](assets/images/ClickTheSpatialButton.png)
 
 [Add the Tilia.Indicators.ObjectPointers.Unity -> Indicators.ObjectPointers.Straight]: https://github.com/ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity/blob/master/Documentation/HowToGuides/AddingAStraightPointer/README.md
-[Install the Tilia.Indicators.SpatialTargets.Unity]: ../Installation/README.md
+[Install the Tilia.Interactions.SpatialButtons.Unity]: ../Installation/README.md
 [Unity]: https://unity3d.com/
 [Adding A Straight Pointer]: https://github.com/ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity/blob/master/Documentation/HowToGuides/AddingAStraightPointer/README.md
 [Step 4]: #Step-4
