@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.16](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.3.15...v1.3.16) (2021-11-16)
+
+#### Bug Fixes
+
+* **HowToGuides:** update project link to correct package ([89c26bf](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/89c26bf0d307c6493cf7a34a9d95f2cb7f4f55d9))
+  > The Adding A Click Button guide contains the incorrect wording to the package installation guide. It should be installing the Spatial Buttons package and not the Spatial Targets package.
+
 ### [1.3.15](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.3.14...v1.3.15) (2021-07-21)
 
 #### Miscellaneous Chores
