@@ -2,7 +2,7 @@
     "name": "io.extendreality.tilia.interactions.spatialbuttons.unity",
     "displayName": "Tilia Interactions SpatialButtons Unity",
     "description": "User interface button types that can be used within a spatial environment for the Unity software.",
-    "version": "1.3.24",
+    "version": "1.3.25",
     "unity": "2018.3",
     "unityRelease": "10f1",
     "keywords": [
