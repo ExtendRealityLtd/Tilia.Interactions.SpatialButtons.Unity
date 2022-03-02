@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.3.31...v1.4.0) (2022-03-02)
+
+#### Features
+
+* **package.json:** add information urls to package ([85e5183](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/85e5183bf8ec44c5b3cc2a6946a2df82f2f6b4ab))
+  > The changelog, documentation and license url has been added to the package.json as these are used within the Unity package manager.
+
 ### [1.3.31](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.3.30...v1.3.31) (2022-02-14)
 
 #### Miscellaneous Chores
