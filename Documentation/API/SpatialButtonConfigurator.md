@@ -32,7 +32,7 @@ Sets up the SpatialButton Prefab based on the provided user settings.
   * [NotifyDeactivated()]
   * [OnEnable()]
   * [RescaleButton(RectTransform)]
-  * [Select()]
+  * [Select(GameObject)]
   * [Select(SurfaceData)]
 
 ## Details
@@ -330,15 +330,21 @@ protected virtual void RescaleButton(RectTransform buttonRect)
 | --- | --- | --- |
 | RectTransform | buttonRect | The button to resize. |
 
-#### Select()
+#### Select(GameObject)
 
-Selects the containing button with null data.
+Selects the containing button.
 
 ##### Declaration
 
 ```
-public virtual void Select()
+public virtual void Select(GameObject selectingObject = null)
 ```
+
+##### Parameters
+
+| Type | Name | Description |
+| --- | --- | --- |
+| GameObject | selectingObject | An optional GameObject that is selecting the button. |
 
 #### Select(SurfaceData)
 
@@ -389,5 +395,5 @@ public virtual void Select(SurfaceData data)
 [NotifyDeactivated()]: #NotifyDeactivated
 [OnEnable()]: #OnEnable
 [RescaleButton(RectTransform)]: #RescaleButtonRectTransform
-[Select()]: #Select
+[Select(GameObject)]: #SelectGameObject
 [Select(SurfaceData)]: #SelectSurfaceData

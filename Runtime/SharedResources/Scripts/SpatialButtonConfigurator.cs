@@ -1,7 +1,5 @@
 ﻿namespace Tilia.Interactions.SpatialButtons
 {
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using System;
     using System.Collections.Generic;
     using Tilia.Indicators.SpatialTargets;
@@ -21,84 +19,229 @@
         [Serializable]
         public class ButtonElement
         {
+            [Tooltip("The MeshFilter for the state of the button.")]
+            [SerializeField]
+            [Restricted]
+            private MeshFilter buttonMeshFilter;
             /// <summary>
             /// The <see cref="MeshFilter"/> for the state of the button.
             /// </summary>
-            [Serialized]
-            [field: DocumentedByXml, Restricted]
-            public MeshFilter ButtonMeshFilter { get; protected set; }
+            public MeshFilter ButtonMeshFilter
+            {
+                get
+                {
+                    return buttonMeshFilter;
+                }
+                protected set
+                {
+                    buttonMeshFilter = value;
+                }
+            }
+            [Tooltip("The MeshRenderer for the state of the button.")]
+            [SerializeField]
+            [Restricted]
+            private MeshRenderer buttonMeshRenderer;
             /// <summary>
             /// The <see cref="MeshRenderer"/> for the state of the button.
             /// </summary>
-            [Serialized]
-            [field: DocumentedByXml, Restricted]
-            public MeshRenderer ButtonMeshRenderer { get; protected set; }
+            public MeshRenderer ButtonMeshRenderer
+            {
+                get
+                {
+                    return buttonMeshRenderer;
+                }
+                protected set
+                {
+                    buttonMeshRenderer = value;
+                }
+            }
+            [Tooltip("The RectTransform for the state of the button.")]
+            [SerializeField]
+            [Restricted]
+            private RectTransform textRect;
             /// <summary>
             /// The <see cref="RectTransform"/> for the state of the button.
             /// </summary>
-            [Serialized]
-            [field: DocumentedByXml, Restricted]
-            public RectTransform TextRect { get; protected set; }
+            public RectTransform TextRect
+            {
+                get
+                {
+                    return textRect;
+                }
+                protected set
+                {
+                    textRect = value;
+                }
+            }
+            [Tooltip("The TextMeshPro for the state of the button.")]
+            [SerializeField]
+            [Restricted]
+            private TextMeshPro text;
             /// <summary>
             /// The <see cref="TextMeshPro"/> for the state of the button.
             /// </summary>
-            [Serialized]
-            [field: DocumentedByXml, Restricted]
-            public TextMeshPro Text { get; protected set; }
+            public TextMeshPro Text
+            {
+                get
+                {
+                    return text;
+                }
+                protected set
+                {
+                    text = value;
+                }
+            }
         }
 
         #region Facade Settings
+        [Header("Facade Settings")]
+        [Tooltip("The public facade.")]
+        [SerializeField]
+        [Restricted]
+        private SpatialButtonFacade facade;
         /// <summary>
         /// The public facade.
         /// </summary>
-        [Serialized]
-        [field: Header("Facade Settings"), DocumentedByXml, Restricted]
-        public SpatialButtonFacade Facade { get; protected set; }
+        public SpatialButtonFacade Facade
+        {
+            get
+            {
+                return facade;
+            }
+            protected set
+            {
+                facade = value;
+            }
+        }
+        [Tooltip("The facade for the internal Spatial Target.")]
+        [SerializeField]
+        [Restricted]
+        private SpatialTargetFacade spatialTargetFacade;
         /// <summary>
         /// The facade for the internal Spatial Target.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public SpatialTargetFacade SpatialTargetFacade { get; protected set; }
+        public SpatialTargetFacade SpatialTargetFacade
+        {
+            get
+            {
+                return spatialTargetFacade;
+            }
+            protected set
+            {
+                spatialTargetFacade = value;
+            }
+        }
+        [Tooltip("The dispatcher for the internal Spatial Target.")]
+        [SerializeField]
+        private SpatialTargetDispatcher spatialTargetDispatcher;
         /// <summary>
         /// The dispatcher for the internal Spatial Target.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public SpatialTargetDispatcher SpatialTargetDispatcher { get; set; }
+        public SpatialTargetDispatcher SpatialTargetDispatcher
+        {
+            get
+            {
+                return spatialTargetDispatcher;
+            }
+            set
+            {
+                spatialTargetDispatcher = value;
+            }
+        }
         #endregion
 
         #region State Settings
+        [Header("State Settings")]
+        [Tooltip("The ButtonElement for the enabled normal state of the button.")]
+        [SerializeField]
+        [Restricted]
+        private ButtonElement enabledNormalState;
         /// <summary>
         /// The <see cref="ButtonElement"/> for the enabled normal state of the button.
         /// </summary>
-        [Serialized]
-        [field: Header("State Settings"), DocumentedByXml, Restricted]
-        public ButtonElement EnabledNormalState { get; protected set; }
+        public ButtonElement EnabledNormalState
+        {
+            get
+            {
+                return enabledNormalState;
+            }
+            protected set
+            {
+                enabledNormalState = value;
+            }
+        }
+        [Tooltip("The ButtonElement for the enabled hover state of the button.")]
+        [SerializeField]
+        [Restricted]
+        private ButtonElement enabledHoverState;
         /// <summary>
         /// The <see cref="ButtonElement"/> for the enabled hover state of the button.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public ButtonElement EnabledHoverState { get; protected set; }
+        public ButtonElement EnabledHoverState
+        {
+            get
+            {
+                return enabledHoverState;
+            }
+            protected set
+            {
+                enabledHoverState = value;
+            }
+        }
+        [Tooltip("The ButtonElement for the enabled active state of the button.")]
+        [SerializeField]
+        [Restricted]
+        private ButtonElement enabledActiveState;
         /// <summary>
         /// The <see cref="ButtonElement"/> for the enabled active state of the button.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public ButtonElement EnabledActiveState { get; protected set; }
+        public ButtonElement EnabledActiveState
+        {
+            get
+            {
+                return enabledActiveState;
+            }
+            protected set
+            {
+                enabledActiveState = value;
+            }
+        }
+        [Tooltip("The ButtonElement for the disabled normal state of the button.")]
+        [SerializeField]
+        [Restricted]
+        private ButtonElement disabledNormalState;
         /// <summary>
         /// The <see cref="ButtonElement"/> for the disabled normal state of the button.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public ButtonElement DisabledNormalState { get; protected set; }
+        public ButtonElement DisabledNormalState
+        {
+            get
+            {
+                return disabledNormalState;
+            }
+            protected set
+            {
+                disabledNormalState = value;
+            }
+        }
+        [Tooltip("The ButtonElement for the disabled hover state of the button.")]
+        [SerializeField]
+        [Restricted]
+        private ButtonElement disabledHoverState;
         /// <summary>
         /// The <see cref="ButtonElement"/> for the disabled hover state of the button.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public ButtonElement DisabledHoverState { get; protected set; }
+        public ButtonElement DisabledHoverState
+        {
+            get
+            {
+                return disabledHoverState;
+            }
+            protected set
+            {
+                disabledHoverState = value;
+            }
+        }
         #endregion
 
         /// <summary>
