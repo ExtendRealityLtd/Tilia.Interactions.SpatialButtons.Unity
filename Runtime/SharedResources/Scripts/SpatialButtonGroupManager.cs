@@ -1,8 +1,5 @@
 ﻿namespace Tilia.Interactions.SpatialButtons
 {
-    using Malimbe.MemberChangeMethod;
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using Tilia.Indicators.SpatialTargets;
     using UnityEngine;
     using Zinnia.Data.Attribute;
@@ -16,27 +13,72 @@
     public class SpatialButtonGroupManager : MonoBehaviour
     {
         #region Group Settings
+        [Header("Group Settings")]
+        [Tooltip("The index for the active button.")]
+        [SerializeField]
+        private int activeButtonIndex = -1;
         /// <summary>
         /// The index for the active button.
         /// </summary>
-        [Serialized]
-        [field: Header("Group Settings"), DocumentedByXml]
-        public int ActiveButtonIndex { get; set; } = -1;
+        public int ActiveButtonIndex
+        {
+            get
+            {
+                return activeButtonIndex;
+            }
+            set
+            {
+                if (this.IsMemberChangeAllowed())
+                {
+                    OnBeforeActiveButtonIndexChange();
+                }
+                activeButtonIndex = value;
+                if (this.IsMemberChangeAllowed())
+                {
+                    OnAfterActiveButtonIndexChange();
+                }
+            }
+        }
         #endregion
 
         #region Reference Settings
+        [Header("Reference Settings")]
+        [Tooltip("The linked button list.")]
+        [SerializeField]
+        [Restricted]
+        private UnityObjectObservableList buttonList;
         /// <summary>
         /// The linked button list.
         /// </summary>
-        [Serialized]
-        [field: Header("Reference Settings"), DocumentedByXml, Restricted]
-        public UnityObjectObservableList ButtonList { get; protected set; }
+        public UnityObjectObservableList ButtonList
+        {
+            get
+            {
+                return buttonList;
+            }
+            protected set
+            {
+                buttonList = value;
+            }
+        }
+        [Tooltip("The linked dispatcher.")]
+        [SerializeField]
+        [Restricted]
+        private SpatialTargetDispatcher dispatcher;
         /// <summary>
         /// The linked dispatcher.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public SpatialTargetDispatcher Dispatcher { get; protected set; }
+        public SpatialTargetDispatcher Dispatcher
+        {
+            get
+            {
+                return dispatcher;
+            }
+            protected set
+            {
+                dispatcher = value;
+            }
+        }
         #endregion
 
         /// <summary>
@@ -141,7 +183,6 @@
         /// <summary>
         /// Called before <see cref="ActiveButtonIndex"/> has been changed.
         /// </summary>
-        [CalledBeforeChangeOf(nameof(ActiveButtonIndex))]
         protected virtual void OnBeforeActiveButtonIndexChange()
         {
             cachedIndex = ActiveButtonIndex;
@@ -150,7 +191,6 @@
         /// <summary>
         /// Called after <see cref="ActiveButtonIndex"/> has been changed.
         /// </summary>
-        [CalledAfterChangeOf(nameof(ActiveButtonIndex))]
         protected virtual void OnAfterActiveButtonIndexChange()
         {
             if (ignoreActiveButtonIndexChanges)

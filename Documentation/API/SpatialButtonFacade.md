@@ -20,6 +20,11 @@ The public interface into the SpatialButton Prefab.
   * [EnabledInactive]
   * [IsEnabled]
 * [Methods]
+  * [ClearDisabledHover()]
+  * [ClearDisabledInactive()]
+  * [ClearEnabledActive()]
+  * [ClearEnabledHover()]
+  * [ClearEnabledInactive()]
   * [Deselect()]
   * [OnAfterDisabledHoverChange()]
   * [OnAfterDisabledInactiveChange()]
@@ -151,6 +156,56 @@ public bool IsEnabled { get; set; }
 
 ### Methods
 
+#### ClearDisabledHover()
+
+Clears [DisabledHover].
+
+##### Declaration
+
+```
+public virtual void ClearDisabledHover()
+```
+
+#### ClearDisabledInactive()
+
+Clears [DisabledInactive].
+
+##### Declaration
+
+```
+public virtual void ClearDisabledInactive()
+```
+
+#### ClearEnabledActive()
+
+Clears [EnabledActive].
+
+##### Declaration
+
+```
+public virtual void ClearEnabledActive()
+```
+
+#### ClearEnabledHover()
+
+Clears [EnabledHover].
+
+##### Declaration
+
+```
+public virtual void ClearEnabledHover()
+```
+
+#### ClearEnabledInactive()
+
+Clears [EnabledInactive].
+
+##### Declaration
+
+```
+public virtual void ClearEnabledInactive()
+```
+
 #### Deselect()
 
 De-selects the containing button if it is in a selected state.
@@ -229,6 +284,11 @@ protected virtual void OnAfterIsEnabledChange()
 [EnabledActive]: SpatialButtonFacade.md#EnabledActive
 [EnabledHover]: SpatialButtonFacade.md#EnabledHover
 [EnabledInactive]: SpatialButtonFacade.md#EnabledInactive
+[DisabledHover]: SpatialButtonFacade.md#DisabledHover
+[DisabledInactive]: SpatialButtonFacade.md#DisabledInactive
+[EnabledActive]: SpatialButtonFacade.md#EnabledActive
+[EnabledHover]: SpatialButtonFacade.md#EnabledHover
+[EnabledInactive]: SpatialButtonFacade.md#EnabledInactive
 [IsEnabled]: SpatialButtonFacade.md#IsEnabled
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
@@ -246,6 +306,11 @@ protected virtual void OnAfterIsEnabledChange()
 [EnabledInactive]: #EnabledInactive
 [IsEnabled]: #IsEnabled
 [Methods]: #Methods
+[ClearDisabledHover()]: #ClearDisabledHover
+[ClearDisabledInactive()]: #ClearDisabledInactive
+[ClearEnabledActive()]: #ClearEnabledActive
+[ClearEnabledHover()]: #ClearEnabledHover
+[ClearEnabledInactive()]: #ClearEnabledInactive
 [Deselect()]: #Deselect
 [OnAfterDisabledHoverChange()]: #OnAfterDisabledHoverChange
 [OnAfterDisabledInactiveChange()]: #OnAfterDisabledInactiveChange
