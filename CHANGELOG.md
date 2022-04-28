@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.4.5...v2.0.0) (2022-04-28)
+
+#### :warning: BREAKING CHANGES :warning:
+
+* **Malimbe:** This removes the last remaining elements of Malimbe and whilst it does not cause any breaking changes within this package, it removes Malimbe as a dependency which other projects that rely on this package may piggy back off this Malimbe dependency so it will break any project like that.
+
+All of the previous functionality from Malimbe has been replicated in standard code without the need for it to be weaved by the Malimbe helper tags. ([c7c877f](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/c7c877fc6ff1a5711b14bd73472c1e7ecc67473b))
+
+#### Features
+
+* **Malimbe:** remove malimbe dependency ([c7c877f](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/c7c877fc6ff1a5711b14bd73472c1e7ecc67473b))
+
 ### [1.4.5](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v1.4.4...v1.4.5) (2022-03-15)
 
 #### Miscellaneous Chores
