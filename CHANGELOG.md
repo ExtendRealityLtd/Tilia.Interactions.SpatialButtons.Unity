@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.3](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.0.2...v2.0.3) (2022-04-28)
+
+#### Bug Fixes
+
+* **SpatialButtonFacade:** make ObjectReference setter private ([6646f72](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/6646f729e44a174a684e078553028cf4dc7c8a17))
+  > The ObjectReference `Container` property should have a protected setter as it is only for use within the Unity Editor and should not be able to be set via code.
+
 ### [2.0.2](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.0.1...v2.0.2) (2022-04-28)
 
 #### Miscellaneous Chores
