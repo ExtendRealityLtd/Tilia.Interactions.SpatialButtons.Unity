@@ -118,7 +118,7 @@
                 {
                     return container;
                 }
-                set
+                protected set
                 {
                     container = value;
                 }
