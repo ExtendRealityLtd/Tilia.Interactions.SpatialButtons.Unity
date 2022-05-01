@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ButtonMesh
+  m_Name: ButtonMeshDisabledNormal
   m_Shader: {fileID: 4800000, guid: 12879b2ff8516c64684131071bf14814, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -89,6 +89,6 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.42352942, g: 0.45882353, b: 0.49019608, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}

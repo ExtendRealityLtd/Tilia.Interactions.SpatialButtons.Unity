@@ -68,7 +68,7 @@ The container references for the button appearance objects.
 ##### Declaration
 
 ```
-public ObjectReference Container { get; set; }
+public ObjectReference Container { get; protected set; }
 ```
 
 #### FontColor

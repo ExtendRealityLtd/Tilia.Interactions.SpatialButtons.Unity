@@ -1,7 +1,6 @@
 ﻿namespace Tilia.Interactions.SpatialButtons
 {
     using System;
-    using System.Collections.Generic;
     using Tilia.Indicators.SpatialTargets;
     using TMPro;
     using UnityEngine;
@@ -248,6 +247,10 @@
         /// The default scale of the text <see cref="RectTransform"/>
         /// </summary>
         private const float defaultRectTransformScale = 0.1f;
+        /// <summary>
+        /// The property block to update mesh colors with.
+        /// </summary>
+        protected MaterialPropertyBlock materialPropertyBlock;
 
         /// <summary>
         /// Selects the containing button.
@@ -374,7 +377,7 @@
                 return;
             }
 
-            ApplyMeshStyle(button.ButtonMeshFilter, style);
+            ApplyMeshStyle(button.ButtonMeshRenderer, style);
             ApplyTextStyle(button.Text, style);
             RescaleButton(button.TextRect);
         }
@@ -382,22 +385,22 @@
         /// <summary>
         /// Styles the mesh with the given style.
         /// </summary>
-        /// <param name="meshFilter">The mesh to style.</param>
+        /// <param name="renderer">The <see cref="MeshRenderer"/> to style.</param>
         /// <param name="style">The styles to apply.</param>
-        protected virtual void ApplyMeshStyle(MeshFilter meshFilter, SpatialButtonFacade.ButtonStyle style)
+        protected virtual void ApplyMeshStyle(MeshRenderer renderer, SpatialButtonFacade.ButtonStyle style)
         {
-            if (meshFilter == null)
+            if (renderer == null)
             {
                 return;
             }
 
-            List<Color> colors = new List<Color>();
-            for (int colorIndex = 0; colorIndex < meshFilter.mesh.vertices.Length; colorIndex++)
+            if (materialPropertyBlock == null)
             {
-                colors.Add(style.MeshColor);
+                materialPropertyBlock = new MaterialPropertyBlock();
             }
 
-            meshFilter.mesh.SetColors(colors);
+            materialPropertyBlock.SetColor("_Color", style.MeshColor);
+            renderer.SetPropertyBlock(materialPropertyBlock);
         }
 
         /// <summary>

@@ -7,6 +7,8 @@ Sets up the SpatialButton Prefab based on the provided user settings.
 * [Inheritance]
 * [Namespace]
 * [Syntax]
+* [Fields]
+  * [materialPropertyBlock]
 * [Properties]
   * [DisabledHoverState]
   * [DisabledNormalState]
@@ -18,7 +20,7 @@ Sets up the SpatialButton Prefab based on the provided user settings.
   * [SpatialTargetFacade]
 * [Methods]
   * [ApplyButtonStyle(SpatialButtonConfigurator.ButtonElement, SpatialButtonFacade.ButtonStyle)]
-  * [ApplyMeshStyle(MeshFilter, SpatialButtonFacade.ButtonStyle)]
+  * [ApplyMeshStyle(MeshRenderer, SpatialButtonFacade.ButtonStyle)]
   * [ApplyTextStyle(TextMeshPro, SpatialButtonFacade.ButtonStyle)]
   * [CalculateRectDimension(Vector3, Int32)]
   * [ConfigureButton()]
@@ -50,6 +52,18 @@ Sets up the SpatialButton Prefab based on the provided user settings.
 
 ```
 public class SpatialButtonConfigurator : MonoBehaviour
+```
+
+### Fields
+
+#### materialPropertyBlock
+
+The property block to update mesh colors with.
+
+##### Declaration
+
+```
+protected MaterialPropertyBlock materialPropertyBlock
 ```
 
 ### Properties
@@ -153,21 +167,21 @@ protected virtual void ApplyButtonStyle(SpatialButtonConfigurator.ButtonElement 
 | [SpatialButtonConfigurator.ButtonElement] | button | The button to style. |
 | [SpatialButtonFacade.ButtonStyle] | style | The styles to apply. |
 
-#### ApplyMeshStyle(MeshFilter, SpatialButtonFacade.ButtonStyle)
+#### ApplyMeshStyle(MeshRenderer, SpatialButtonFacade.ButtonStyle)
 
 Styles the mesh with the given style.
 
 ##### Declaration
 
 ```
-protected virtual void ApplyMeshStyle(MeshFilter meshFilter, SpatialButtonFacade.ButtonStyle style)
+protected virtual void ApplyMeshStyle(MeshRenderer renderer, SpatialButtonFacade.ButtonStyle style)
 ```
 
 ##### Parameters
 
 | Type | Name | Description |
 | --- | --- | --- |
-| MeshFilter | meshFilter | The mesh to style. |
+| MeshRenderer | renderer | The MeshRenderer to style. |
 | [SpatialButtonFacade.ButtonStyle] | style | The styles to apply. |
 
 #### ApplyTextStyle(TextMeshPro, SpatialButtonFacade.ButtonStyle)
@@ -370,6 +384,8 @@ public virtual void Select(SurfaceData data)
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
+[Fields]: #Fields
+[materialPropertyBlock]: #materialPropertyBlock
 [Properties]: #Properties
 [DisabledHoverState]: #DisabledHoverState
 [DisabledNormalState]: #DisabledNormalState
@@ -381,7 +397,7 @@ public virtual void Select(SurfaceData data)
 [SpatialTargetFacade]: #SpatialTargetFacade
 [Methods]: #Methods
 [ApplyButtonStyle(SpatialButtonConfigurator.ButtonElement, SpatialButtonFacade.ButtonStyle)]: #ApplyButtonStyleSpatialButtonConfigurator.ButtonElement-SpatialButtonFacade.ButtonStyle
-[ApplyMeshStyle(MeshFilter, SpatialButtonFacade.ButtonStyle)]: #ApplyMeshStyleMeshFilter-SpatialButtonFacade.ButtonStyle
+[ApplyMeshStyle(MeshRenderer, SpatialButtonFacade.ButtonStyle)]: #ApplyMeshStyleMeshRenderer-SpatialButtonFacade.ButtonStyle
 [ApplyTextStyle(TextMeshPro, SpatialButtonFacade.ButtonStyle)]: #ApplyTextStyleTextMeshPro-SpatialButtonFacade.ButtonStyle
 [CalculateRectDimension(Vector3, Int32)]: #CalculateRectDimensionVector3-Int32
 [ConfigureButton()]: #ConfigureButton
