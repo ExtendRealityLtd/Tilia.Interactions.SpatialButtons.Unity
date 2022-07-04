@@ -391,13 +391,34 @@
                 return;
             }
 
+            Mesh meshCopy = null;
+            int verticesLength = 0;
+
+            if (Application.isPlaying)
+            {
+                verticesLength = meshFilter.mesh.vertices.Length;
+            }
+            else
+            {
+                meshCopy = Instantiate(meshFilter.sharedMesh);
+                verticesLength = meshCopy.vertices.Length;
+            }
+
             List<Color> colors = new List<Color>();
-            for (int colorIndex = 0; colorIndex < meshFilter.mesh.vertices.Length; colorIndex++)
+            for (int colorIndex = 0; colorIndex < verticesLength; colorIndex++)
             {
                 colors.Add(style.MeshColor);
             }
 
-            meshFilter.mesh.SetColors(colors);
+            if (Application.isPlaying)
+            {
+                meshFilter.mesh.SetColors(colors);
+            }
+            else
+            {
+                meshCopy.SetColors(colors);
+                meshFilter.mesh = meshCopy;
+            }
         }
 
         /// <summary>
