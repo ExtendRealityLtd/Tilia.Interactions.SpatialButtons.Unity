@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.0](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.0.10...v2.1.0) (2022-07-04)
+
+#### Features
+
+* **Editor:** add custom buttons for facade ([563bd2e](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/563bd2eaf3901ea5e113cb4b87ffbfcbd30775f4))
+  > A new custom inspector editor has been added for the Spatial Button Facade that renders a `Copy Text and Size` button that will copy the text and font size from the enabled inactive style to all the other states to make it easier to update.
+  > 
+  > There is also a `Preview Style` button that will apply the styles in the editor so it is easy to see what the button looks like without needing to run the scene in play mode.
+
 ### [2.0.10](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.0.9...v2.0.10) (2022-06-19)
 
 #### Miscellaneous Chores
