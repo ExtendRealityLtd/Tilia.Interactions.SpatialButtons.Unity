@@ -7,10 +7,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1972814824867083557, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 2523722850827099774, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4,
+        type: 2}
+    - target: {fileID: 2523722850827099774, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937061634882221739, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: actionsOnHover
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937061634882221739, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: actionsOnActivate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3991973942380455354, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
         type: 3}
       propertyPath: m_Name
-      value: Interactions.SpatialButton.Toggle
+      value: Interactions.SpatialButton.ToggleButton
       objectReference: {fileID: 0}
     - target: {fileID: 3991973942380455356, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
         type: 3}
@@ -67,15 +93,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3937061634882221739, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+    - target: {fileID: 4088187645122458557, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
         type: 3}
-      propertyPath: actionsOnHover
-      value: 0
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3937061634882221739, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+    - target: {fileID: 5299522958527608246, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
         type: 3}
-      propertyPath: actionsOnActivate
-      value: 0
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4,
+        type: 2}
+    - target: {fileID: 5299522958527608246, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848573179124016618, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4,
+        type: 2}
+    - target: {fileID: 6848573179124016618, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7540004184583538857, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
         type: 3}
@@ -87,10 +130,27 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4088187645122458557, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+    - target: {fileID: 7540004184583538857, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
         type: 3}
-      propertyPath: m_Mesh
+      propertyPath: m_fontAsset
       value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4,
+        type: 2}
+    - target: {fileID: 7540004184583538857, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 7576476292929350410, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4,
+        type: 2}
+    - target: {fileID: 7576476292929350410, guid: 6c5e61ad8d2b39f4da6fc035d795d871,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c5e61ad8d2b39f4da6fc035d795d871, type: 3}

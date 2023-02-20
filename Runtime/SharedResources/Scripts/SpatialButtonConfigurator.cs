@@ -1,7 +1,6 @@
 ﻿namespace Tilia.Interactions.SpatialButtons
 {
     using System;
-    using System.Collections.Generic;
     using Tilia.Indicators.SpatialTargets;
     using TMPro;
     using UnityEngine;
@@ -374,7 +373,7 @@
                 return;
             }
 
-            ApplyMeshStyle(button.ButtonMeshFilter, style);
+            ApplyMeshStyle(button, style);
             ApplyTextStyle(button.Text, style);
             RescaleButton(button.TextRect);
         }
@@ -382,43 +381,18 @@
         /// <summary>
         /// Styles the mesh with the given style.
         /// </summary>
-        /// <param name="meshFilter">The mesh to style.</param>
+        /// <param name="button">The button to style.</param>
         /// <param name="style">The styles to apply.</param>
-        protected virtual void ApplyMeshStyle(MeshFilter meshFilter, SpatialButtonFacade.ButtonStyle style)
+        protected virtual void ApplyMeshStyle(ButtonElement button, SpatialButtonFacade.ButtonStyle style)
         {
-            if (meshFilter == null)
+            if (button.ButtonMeshRenderer == null)
             {
                 return;
             }
 
-            Mesh meshCopy = null;
-            int verticesLength = 0;
-
-            if (Application.isPlaying)
-            {
-                verticesLength = meshFilter.mesh.vertices.Length;
-            }
-            else
-            {
-                meshCopy = Instantiate(meshFilter.sharedMesh);
-                verticesLength = meshCopy.vertices.Length;
-            }
-
-            List<Color> colors = new List<Color>();
-            for (int colorIndex = 0; colorIndex < verticesLength; colorIndex++)
-            {
-                colors.Add(style.MeshColor);
-            }
-
-            if (Application.isPlaying)
-            {
-                meshFilter.mesh.SetColors(colors);
-            }
-            else
-            {
-                meshCopy.SetColors(colors);
-                meshFilter.mesh = meshCopy;
-            }
+            Material updateMaterial = new Material(button.ButtonMeshRenderer.sharedMaterial);
+            updateMaterial.color = style.MeshColor;
+            button.ButtonMeshRenderer.sharedMaterial = updateMaterial;
         }
 
         /// <summary>
