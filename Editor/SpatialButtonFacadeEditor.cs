@@ -19,7 +19,9 @@
 
             try
             {
-                GUILayout.BeginHorizontal("GroupBox");
+                GUILayout.BeginVertical("GroupBox");
+
+                GUILayout.BeginHorizontal();
                 GUILayout.FlexibleSpace();
                 if (GUILayout.Button(new GUIContent(copyDataButtonText, copyDataButtonTooltip)))
                 {
@@ -28,7 +30,9 @@
                 GUILayout.FlexibleSpace();
                 GUILayout.EndHorizontal();
 
-                GUILayout.BeginHorizontal("GroupBox");
+                EditorHelper.DrawHorizontalLine();
+
+                GUILayout.BeginHorizontal();
                 GUILayout.FlexibleSpace();
                 if (GUILayout.Button(previewButtonText))
                 {
@@ -36,6 +40,8 @@
                 }
                 GUILayout.FlexibleSpace();
                 GUILayout.EndHorizontal();
+
+                GUILayout.EndVertical();
             }
             catch (Exception exception)
             {
