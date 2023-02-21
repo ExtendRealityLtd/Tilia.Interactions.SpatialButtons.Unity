@@ -1,5 +1,16 @@
 # Changelog
 
+### [2.2.3](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.2.2...v2.2.3) (2023-02-21)
+
+#### Bug Fixes
+
+* **Editor:** move both action buttons into same group ([b7a7fda](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/b7a7fdaf260a4cd7750d7ae1cb268f933488508a))
+  > The `Copy Text and Size` button and the `Preview Style` button have now been moved into the same `GroupBox` group as this looks neater.
+* **Materials:** swap button shader to mobile friendly version ([65a6ea4](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/65a6ea49331deb7f6890a8e1fcd52548f2d0ae4a))
+  > The standard unity particle shaders do not behave well on mobile devices such as the oculus quest so the shader has been switched out on the SpatialButton material to the Tilia vertex unlit shader.
+  > 
+  > The style setting code has been updated now to just use a simple shared material color set as this seems to work for all shaders.
+
 ### [2.2.2](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.2.1...v2.2.2) (2023-02-19)
 
 #### Miscellaneous Chores
