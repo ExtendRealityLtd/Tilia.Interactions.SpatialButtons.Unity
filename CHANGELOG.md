@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.2.17](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.2.16...v2.2.17) (2023-03-21)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.indicators.spatialtargets.unity ([ff7b1f8](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/ff7b1f8cb3808d1c650c7f94caa3a0e84729fe0d))
+  > Bumps [io.extendreality.tilia.indicators.spatialtargets.unity](https://github.com/ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity) from 2.0.25 to 2.0.26. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity/compare/v2.0.25...v2.0.26)
+
 ### [2.2.16](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.2.15...v2.2.16) (2023-03-21)
 
 #### Miscellaneous Chores
