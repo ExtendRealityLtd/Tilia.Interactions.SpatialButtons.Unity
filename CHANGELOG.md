@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.2.25...v2.3.0) (2023-04-04)
+
+#### Features
+
+* **Resources:** add multiple render pipeline materials ([c530247](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/c530247dbb2ae0547a77dc26ac2cc1f10e5ba0ad))
+  > The prefab now uses the Pipeline Material Applier to provide multiple material types for the main render pipelines to improve compatibility.
+
 ### [2.2.25](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.2.24...v2.2.25) (2023-04-04)
 
 #### Miscellaneous Chores
