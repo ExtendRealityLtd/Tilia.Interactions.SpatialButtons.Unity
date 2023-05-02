@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.3.4](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.3.3...v2.3.4) (2023-05-02)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.zinnia.unity from 2.11.0 to 2.12.0 ([1eec54e](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/1eec54ed793dac9dd9ab36e643e53e0252adc1e5))
+  > Bumps [io.extendreality.zinnia.unity](https://github.com/ExtendRealityLtd/Zinnia.Unity) from 2.11.0 to 2.12.0. - [Release notes](https://github.com/ExtendRealityLtd/Zinnia.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Zinnia.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Zinnia.Unity/compare/v2.11.0...v2.12.0)
+
 ### [2.3.3](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.3.2...v2.3.3) (2023-04-16)
 
 #### Miscellaneous Chores
