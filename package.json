@@ -31,7 +31,7 @@
     "dependencies": {
         "io.extendreality.zinnia.unity": "2.16.0",
         "io.extendreality.tilia.utilities.shaders.unity": "1.4.0",
-        "io.extendreality.tilia.indicators.spatialtargets.unity": "2.2.16",
+        "io.extendreality.tilia.indicators.spatialtargets.unity": "2.2.17",
         "com.unity.textmeshpro": "1.4.1"
     },
     "files": [
