@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.3.26](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.3.25...v2.3.26) (2024-05-11)
+
+#### Bug Fixes
+
+* **Editor:** disable custom inspector if ignore custom editor is set ([3095278](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/commit/3095278a250f6faf6d02efbede3dd9f89f4cc308))
+  > If the ZINNIA_IGNORE_CUSTOM_INSPECTOR_EDITOR ifdef is set then the custom editor must also be disabled otherwise an error will occur.
+
 ### [2.3.25](https://github.com/ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity/compare/v2.3.24...v2.3.25) (2024-04-17)
 
 #### Miscellaneous Chores
