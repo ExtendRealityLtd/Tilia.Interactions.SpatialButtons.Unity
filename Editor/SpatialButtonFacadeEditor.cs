@@ -1,5 +1,7 @@
 ﻿namespace Tilia.Interactions.SpatialButtons
 {
+#if ZINNIA_IGNORE_CUSTOM_INSPECTOR_EDITOR
+#else
     using System;
     using UnityEditor;
     using UnityEngine;
@@ -85,4 +87,5 @@
             facade.Configuration.ConfigureButton();
         }
     }
+#endif
 }
